@@ -1,0 +1,69 @@
+.getUserById {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.getUserById-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.getUserById h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.getUserById input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.getUserById #find {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0371d0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+  transition: background-color 0.3s ease;
+}
+
+.getUserById #find:hover {
+  background-color: #003e75;
+}
+
+.getUserById .user-details {
+  margin-top: 20px;
+}
+
+.getUserById .user-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.getUserById .user-details li {
+  font-size: 1rem;
+  padding: 5px 0;
+}
+
+.getUserById .user-details strong {
+  font-weight: bold;
+}

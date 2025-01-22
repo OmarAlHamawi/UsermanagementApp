@@ -1,0 +1,114 @@
+.createUser {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.createUser .createUserContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.createUser h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.createUser .form-fields {
+  margin-bottom: 20px;
+}
+
+.createUser .form-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow fields to wrap on smaller screens */
+  gap: 20px; /* Add space between fields */
+  margin-bottom: 15px; /* Add space between rows */
+}
+
+.createUser .form-field {
+  flex: 1 1 calc(50% - 20px); /* Take up half the row width with some gap */
+  min-width: 200px;
+}
+
+.createUser .form-field label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.createUser .form-field input,
+.createUser .form-field select {
+  width: 100%; /* Full width of the parent */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.createUser .form-field input:focus,
+.createUser .form-field select:focus {
+  border-color: #0371d0;
+  outline: none;
+}
+
+.createUser #create {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0371d0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createUser #create:hover {
+  background-color: #003e75;
+}
+
+.createUser #lastRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}

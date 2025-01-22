@@ -1,0 +1,207 @@
+.viewAllUsers {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+.viewAllUsers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.viewAllUsers h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.viewAllUsers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.viewAllUsers-table th,
+.viewAllUsers-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.viewAllUsers-table th {
+  background-color: #0371d0;
+  color: white;
+}
+
+.viewAllUsers-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.viewAllUsers-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .viewAllUsers-table th,
+  .viewAllUsers-table td {
+    padding: 8px;
+  }
+
+  .viewAllUsers-container {
+    padding: 10px;
+  }
+}
+.pagination-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 10px;
+}
+.pagination-controls span {
+  font-size: 14px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-button :hover {
+  background-color: #004c8f;
+}
+.pagination-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.size-dropdown {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+}
+.tableButton {
+  margin: auto;
+  background-color: #0371d0;
+  color: #ffff;
+  border: none;
+  padding: 7px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+FaPen {
+  background-color: #fff;
+}
+.searchAndfilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.search-button {
+  background-color: #0371d0;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #004c8f;
+}
+
+/* Adjust spacing for buttons */
+.adduser button {
+  background-color: #0371d0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.adduser button:hover {
+  background-color: #004c8f;
+}
+.searchAndfilter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-dropdowns {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-dropdowns select,
+.filter-dropdowns .react-select {
+  padding: 8px;
+}
+.userRoalDropdown,
+.userCountryDropdown {
+  border-radius: 5px;
+}
+
+#deleteYes {
+  background-color: #ff4d4d;
+}
+#deleteYes :hover {
+  background-color: #c23a3a;
+}
+#deletepopup {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,86 @@
+.update-user-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update-user-page .form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-user-page h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-field,
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.update-user-page label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.update-user-page input,
+.update-user-page select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+  align-items: start;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.eye-icon:hover {
+  color: #0371d0;
+}
+
+.update-user-page #update {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0371d0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-user-page #update:hover {
+  background-color: #003e75;
+}

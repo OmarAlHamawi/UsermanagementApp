@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # React Frontend Service
+  react-app:
+    build:
+      context: ./users-managment-app
+      dockerfile: Dockerfile
+    container_name: react-app
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+  # Spring Boot Backend Service
+  backend:
+    build:
+      context: ./user-management-system
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "8090:8090" 
+    environment:
+      - spring.datasource.url=jdbc:postgresql://host.docker.internal:5432/UsersDatabase
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+    depends_on:
+      - postgres
+
+  # PostgreSQL Database Service
+  postgres:
+    image: postgres:15 
+    container_name: postgres_container
+    ports:
+      - "5432:5432" 
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: UsersDatabase
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
