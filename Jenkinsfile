@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/OmarAlHamawi/UsermanagementApp/tree/main'
+                git 'https://github.com/OmarAlHamawi/UsermanagementApp'
             }
         }
 
