@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven' // Maven configured in Jenkins
-        nodejs 'NodeJS' // NodeJS configured in Jenkins
+        maven 'jenkins-maven' // Maven configured in Jenkins
+        nodejs 'nodejs' // NodeJS configured in Jenkins
     }
 
     environment {
