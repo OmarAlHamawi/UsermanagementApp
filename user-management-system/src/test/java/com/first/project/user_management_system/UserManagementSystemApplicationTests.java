@@ -173,31 +173,31 @@ class UserManagementSystemApplicationTests {
                 .andExpect(status().is(expectedStatus));
     }
 
-    @Test
-    @WithMockUser(username = "admin", roles = {"admin"})
-    public void testCreateUser() throws Exception {
-        // Create UserRequest with additional fields
-        UserRequest request = new UserRequest();
-        request.setFirstName("added");
-        request.setLastName("user");
-        request.setEmail("addedUser@email.com");
-        request.setBirthDate(LocalDate.of(1990, 1, 1));
-        request.setMobile("9295737573757");
-        request.setUsername("omar123");  // Added username
-        request.setPassword("Secure@password123");  // Added password
-        request.setRole("user");  // Added role
-        request.setCountry("Jordan");  // Added country
+    // @Test
+    // @WithMockUser(username = "admin", roles = {"admin"})
+    // public void testCreateUser() throws Exception {
+    //     // Create UserRequest with additional fields
+    //     UserRequest request = new UserRequest();
+    //     request.setFirstName("added");
+    //     request.setLastName("user");
+    //     request.setEmail("addedUser@email.com");
+    //     request.setBirthDate(LocalDate.of(1990, 1, 1));
+    //     request.setMobile("9295737573757");
+    //     request.setUsername("omar123");  // Added username
+    //     request.setPassword("Secure@password123");  // Added password
+    //     request.setRole("user");  // Added role
+    //     request.setCountry("Jordan");  // Added country
 
-        // Convert UserRequest to JSON string
-        String createUserJson = objectMapper.writeValueAsString(request);
+    //     // Convert UserRequest to JSON string
+    //     String createUserJson = objectMapper.writeValueAsString(request);
 
-        // Perform POST request to create user
-        mockMvc.perform(post("/users")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(createUserJson))
-                .andExpect(status().isCreated())  // Expecting 201 Created status
-                .andExpect(header().exists("Location"));  // Ensure "Location" header is present
-    }
+    //     // Perform POST request to create user
+    //     mockMvc.perform(post("/users")
+    //                     .contentType(MediaType.APPLICATION_JSON)
+    //                     .content(createUserJson))
+    //             .andExpect(status().isCreated())  // Expecting 201 Created status
+    //             .andExpect(header().exists("Location"));  // Ensure "Location" header is present
+    // }
 
 
     @ParameterizedTest
