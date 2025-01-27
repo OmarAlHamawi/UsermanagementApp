@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'jenkins-maven' // Maven configured in Jenkins
-        nodejs 'nodejs' // NodeJS configured in Jenkins
+        maven 'jenkins-maven' 
+        nodejs 'nodejs' 
     }
 
     environment {
@@ -27,12 +27,12 @@ pipeline {
         }
 
         stage('Frontend - Install Dependencies') {
-            steps {
-                dir("${FRONTEND_DIR}") {
-                    sh 'npm install'
-                }
-            }
+    steps {
+        dir("${FRONTEND_DIR}") {
+            bat 'npm install'
         }
+    }
+}
 
         stage('Frontend - Cypress Tests') {
             steps {
