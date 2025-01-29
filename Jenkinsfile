@@ -27,17 +27,25 @@ pipeline {
         }
 
         stage('Frontend - Install Dependencies') {
-    steps {
-        dir("${FRONTEND_DIR}") {
-            bat 'npm install'
+            steps {
+                dir("${FRONTEND_DIR}") {
+                    bat 'npm install'
+                }
+            }
         }
-    }
-}
+
+        stage('Frontend - Build') {
+            steps {
+                dir("${FRONTEND_DIR}") {
+                    bat 'npm run build'
+                }
+            }
+        }
 
         stage('Frontend - Cypress Tests') {
             steps {
                 dir("${FRONTEND_DIR}") {
-                    sh 'npm run test:e2e'
+                    powershell 'npm run test:e2e'
                 }
             }
         }
