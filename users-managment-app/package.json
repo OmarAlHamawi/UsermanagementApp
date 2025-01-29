@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:e2e": "cypress run"
   },
   "dependencies": {
     "@types/react-select-country-list": "^2.2.3",
