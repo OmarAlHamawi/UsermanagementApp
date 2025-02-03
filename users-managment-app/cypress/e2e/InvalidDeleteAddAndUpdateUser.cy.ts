@@ -1,8 +1,8 @@
 describe('Invalid Data In Add And UpdateUser', () => {
   beforeEach(() => {
     cy.visit('/login');
-    cy.get('#username').type('admin2');
-    cy.get('#password').type('54321');
+    cy.get('#username').type('omar2');
+    cy.get('#password').type('12345');
     cy.get('button[type="submit"]').click();
     cy.url().should("include", "/");
     cy.contains('View All Users').click();
