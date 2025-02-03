@@ -10,7 +10,7 @@ describe('invaled Add and delete user', () => {
   });
   it('should faild to delete', () => {
     cy.get(".search-input").type("ahmad");
-    cy.get("button").contains("Search").click();
+    //cy.get("button").contains("Search").click();
     cy.get(".viewAllUsers-table").should("have.length.greaterThan", 0);
   
     cy.get("#deletebutton").click();
@@ -26,8 +26,8 @@ describe('invaled Add and delete user', () => {
     cy.get('input[name="username"]').type("testuser3");
     cy.get('input[name="mobile"]').type("1256789");
     cy.get('input[name="email"]').type("testuser3@example.com");
-    cy.get('input[name="password"]').type("password123");
-    cy.get('input[name="role"]').type("User");
+    //cy.get('input[name="password"]').type("password123");
+    cy.get('select[name="role"]').select("User");
     cy.get('input[name="birthDate"]').type("1990-01-01");
     cy.get('select[name="country"]').select("United States");
     cy.get("#create").click();
