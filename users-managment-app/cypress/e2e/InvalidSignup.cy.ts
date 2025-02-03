@@ -16,13 +16,13 @@ describe("Signup Page Tests", () => {
   });
   it("Should display an error popup if signup fails", () => {
     
-    cy.get("#firstName").type("testuser2");
-    cy.get("#lastName").type("testuser");
-    cy.get("#birthDate").type("1960-05-03");
-    cy.get("#mobile").type("1234567891011");
-    cy.get("#email").type("testuser@email.com"); 
-    cy.get("#username").type("testuser");
-    cy.get("#password").type("securepassword");
+    cy.get("#firstName").type("ali");
+    cy.get("#lastName").type("ali");
+    cy.get("#birthDate").type("2960-05-03");
+    cy.get("#mobile").type("9223372036854775807213");
+    cy.get("#email").type("ali@email.com"); 
+    cy.get("#username").type("temp_userName");
+    cy.get("#password").type("pass");
     cy.get("select[name='country']").select("United States");
     cy.get("button[type='submit']").click(); 
     cy.get(".popup-content").should("contain", "Signup failed. Please check your credentials");
