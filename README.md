@@ -76,12 +76,12 @@ The frontend will be available at **[http://localhost:5173](http://localhost:517
 - Request Body:
   ```json
   {
-    "firstName": "Omar",
-    "lastName": "Al-Hamawi",
+    "firstName": "John",
+    "lastName": "deo",
     "birthDate": "2003-08-18",
-    "mobile": "+962799875468",
-    "email": "omar9hama9@gmail.com",
-    "username": "Omar_Al_Hamawi",
+    "mobile": "00962799800000",
+    "email": "john.deo@email.com",
+    "username": "john.deo",
     "password": "Password@123",
     "role": "admin",
     "country": "Jordan"
